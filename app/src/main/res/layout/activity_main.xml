@@ -16,7 +16,7 @@
     </LinearLayout>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/gamer"
         android:layout_width="220dp"
         android:layout_height="46dp"
         android:layout_marginBottom="8dp"
@@ -31,18 +31,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/status"
         android:layout_width="161dp"
         android:layout_height="29dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         android:text="請輸入名字已開始遊戲"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintStart_toStartOf="@+id/gamer"
+        app:layout_constraintTop_toBottomOf="@+id/gamer" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/play"
         android:layout_width="116dp"
         android:layout_height="55dp"
         android:layout_marginEnd="8dp"
@@ -62,7 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4">
+        app:layout_constraintTop_toBottomOf="@+id/play">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -78,7 +79,7 @@
                 android:text="名字" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="530dp"
                 android:layout_weight="1"
@@ -99,7 +100,7 @@
                 android:text="勝利者" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/winner"
                 android:layout_width="match_parent"
                 android:layout_height="530dp"
                 android:layout_weight="1"
@@ -120,7 +121,7 @@
                 android:text="我方出拳" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/myMora"
                 android:layout_width="match_parent"
                 android:layout_height="530dp"
                 android:layout_weight="1"
@@ -141,7 +142,7 @@
                 android:text="電腦出拳" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/computerMora"
                 android:layout_width="match_parent"
                 android:layout_height="530dp"
                 android:layout_weight="1"
@@ -155,7 +156,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/status"
         tools:layout_editor_absoluteX="16dp">
 
         <RadioButton
@@ -165,7 +166,7 @@
             android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:text="剪刀"
-            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/status"
             app:layout_constraintTop_toBottomOf="parent" />
 
         <RadioButton
